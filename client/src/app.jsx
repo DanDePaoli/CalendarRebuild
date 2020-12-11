@@ -1,7 +1,5 @@
 import React from 'react';
 import axios from 'axios';
-import Tiles from './tiles.jsx';
-import AddArt from './add-art.jsx';
 
 
 class App extends React.Component {
