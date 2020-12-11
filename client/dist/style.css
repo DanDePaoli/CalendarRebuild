@@ -1,0 +1,170 @@
+.Outer {
+  width: 420px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  top: 60px;
+  position: sticky;
+}
+
+.Menu {
+  margin-top: 48px;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+}
+
+.Button {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 24px;
+  padding-right: 24px;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  margin: 0px;
+  text-decoration: none;
+  border-radius: 8px;
+  outline: none;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+}
+
+.ButtonText {
+  display: block;
+  position: relative;
+  pointer-events: none;
+}
+
+.PlaceInfo-Container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+}
+
+.PlaceInfo-Left {
+margin-bottom: 24px;
+}
+
+.PlaceInfo-Fee {
+font-weight: 600;
+font-size: 22px;
+line-height: 26px;
+}
+
+
+.PlaceInfo-Nightly {
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+white-space: nowrap;
+padding-left: 4px;
+}
+
+.PlaceInfo-Right {
+font-size: 14px;
+line-height: 18px;
+}
+
+.PlaceInfo-Star {
+ font-family: Airmoji_Standalone;
+ color: #FF385C;
+ }
+
+.PlaceInfo-Rating {
+ padding-left: 4px;
+font-weight: 600;
+}
+
+.PlaceInfo-Reviews {
+padding-left: 4px;
+color: rgb(113, 113, 113);
+}
+
+.Options-Container {
+  border-radius: 8px;
+  border: 1px solid rgb(176, 176, 176);
+  margin-bottom: 16px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  }
+
+  .Fees-Message {
+    color: rgb(34, 34, 34);
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: center;
+    margin: 16px 0px 0px;
+    padding: 0px;
+  }
+
+  .Fees-Fees {
+    margin-top: 24px;
+    color: rgb(34, 34, 34);
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .Fees-List {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .Fees-ListEntry {
+    padding-bottom: 12px;
+    display: flex;
+  }
+
+  .Fees-EntryLeft {
+    flex-shrink: 1;
+    flex-grow: 1;
+    white-space: normal;
+    text-decoration: underline;
+  }
+
+  .Fees-EntryRight {
+    padding-left: 16px;
+    white-space: nowrap;
+  }
+
+  .Fees-Total {
+    list-style-type: none;
+    border-top: 1px solid rgb(221, 221, 221);
+    margin: 16px 0px 0px;
+    padding: 24px 0px 12px;
+    display: flex;
+  }
+
+  .Fees-TotalLeft {
+    flex-shrink: 1;
+    flex-grow: 1;
+    white-space: normal;
+    font-weight: 800;
+  }
+
+  .Fees-TotalRight {
+    padding-left: 16px;
+    white-space: nowrap;
+    font-weight: 800;
+  }
