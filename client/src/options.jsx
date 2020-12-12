@@ -1,5 +1,5 @@
 import React from 'react';
-// import DateOption from './DateOption.jsx';
+// import OptionsDates from './options-dates.jsx';
 // import GuestOption from './GuestOption.jsx';
 
 const Options = (props) => (

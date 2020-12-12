@@ -270,10 +270,11 @@ color: rgb(113, 113, 113);
     margin: 0px;
     text-decoration: none;
     outline: none;
-    :hover {
-      color: rgb(34, 34, 34);
-      border-color: rgb(34, 34, 34);
-    }
+}
+
+.Guests-GuestButton:hover {
+  color: rgb(34, 34, 34);
+  border-color: rgb(34, 34, 34);
 }
 
 .Guests-DisableGuestButton {
@@ -465,9 +466,10 @@ color: rgb(113, 113, 113);
   outline: 0px;
   padding: 10px;
   background: transparent;
-  :hover {
-    background: rgb(247, 247, 247);
-  }
+}
+
+.Calendar-PrevNextButton:hover {
+  background: rgb(247, 247, 247);
 }
 
 .Calendar-DisablePrevButton {
@@ -550,10 +552,12 @@ color: rgb(113, 113, 113);
   color: rgb(34, 34, 34);
   font-weight: 600;
   cursor: pointer;
-  :hover {
-    border-color: rgb(34, 34, 34);
-  }
 }
+
+.Calendar-EachDay:hover {
+  border-color: rgb(34, 34, 34);
+}
+
 
 .Calendar-DisableHoverEachDay {
   margin-left: 1px;
@@ -588,10 +592,12 @@ color: rgb(113, 113, 113);
   outline: 0px;
   padding: 10px;
   background: transparent;
-  :hover {
-    background: rgb(247, 247, 247);
-  }
 }
+
+.Calendar-KeyboardButton:hover {
+  background: rgb(247, 247, 247);
+}
+
 
 .Calendar-ClearButton {
   cursor: pointer;
@@ -613,11 +619,11 @@ color: rgb(113, 113, 113);
   border-style: none;
   background: transparent;
   text-decoration: underline;
-  :hover {
-    color: rgb(0, 0, 0);
-    background: rgb(247, 247, 247);
-  }
+}
 
+.Calendar-ClearButton:hover {
+  color: rgb(0, 0, 0);
+  background: rgb(247, 247, 247);
 }
 
 .Calendar-CloseButton {
@@ -638,7 +644,137 @@ color: rgb(113, 113, 113);
   outline: none;
   border-style: none;
   background: rgb(34, 34, 34);
-  :hover {
-    background: rgb(0,0,0);
-  }
+
+}
+
+.Calendar-CloseButton:hover {
+  background: rgb(0,0,0);
+}
+
+
+.OptionsDates-Container{
+  display: flex;
+}
+
+.OptionsDates-CheckIn{
+  position: relative;
+  flex: 1 1 0%;
+}
+
+.OptionsDates-CheckOut{
+  position: relative;
+  flex: 1 1 0%;
+  border-left: 1px solid rgb(176, 176, 176);
+}
+
+
+.OptionsDates-CheckTitle{
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+
+.OptionsDates-{
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 26px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: rgb(113, 113, 113);
+}
+
+.CalendarSelector-Container {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 20px;
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  position: absolute;
+  top: 50px;
+  right: -10px;
+  width: 661px;
+  z-index: 3;
+  min-height: 460px;
+  background: rgb(255, 255, 255);
+  border-radius: 16px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+
+.CalendarSelector-Top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+.CalendarSelector-Bottom {
+  display: flex;
+  height: 100%;
+}
+
+.CalendarSelector-TopLeft {
+  order: 1;
+}
+
+.CalendarSelector-TopRight {
+  flex-basis: 315px;
+  order: 2;
+  margin-left: 24px;
+  min-width: 270px;
+  display: flex;
+  box-shadow: rgb(176, 176, 176) 0px 0px 0px 1px inset;
+  border-radius: 8px;
+}
+
+.CalendarSelector-SelectDate {
+  margin: 0px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.CalendarSelector-MinimumStay {
+  color: rgb(113, 113, 113);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 8px;
+  max-height: 36px;
+  height: 36px;
+}
+
+.CalendarSelector-CheckIn {
+  position: relative;
+  flex: 1 1 0%;
+}
+
+.CalendarSelector-CheckOut {
+  position: relative;
+  flex: 1 1 0%;
+  border-left: 1px solid rgb(176, 176, 176);
+}
+
+.CalendarSelector-CheckTitle {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.CalendarSelector-AddDate {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 26px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: rgb(113, 113, 113);
 }
