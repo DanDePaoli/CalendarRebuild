@@ -9,7 +9,8 @@
   },
   "scripts": {
     "build": "webpack -d --watch",
-    "start": "nodemon server/index.js"
+    "start": "nodemon server/index.js",
+    "seeddb": "node db/seed.js"
   },
   "dependencies": {
     "jquery": "^3.5.1",
