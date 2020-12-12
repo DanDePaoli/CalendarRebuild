@@ -3,7 +3,7 @@ import CalendarSelector from './calendar-selector.jsx';
 import moment from 'moment';
 
 
-class OptionsDate extends React.Component {
+class OptionsDates extends React.Component {
   constructor(props) {
     super(props);
 
@@ -51,4 +51,4 @@ class OptionsDate extends React.Component {
   }
 }
 
-export default OptionsDate;
+export default OptionsDates;

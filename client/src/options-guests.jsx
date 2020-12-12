@@ -1,44 +1,5 @@
 import React from 'react';
-import GuestBox from './GuestBox.jsx';
-
-const Container = styled.div`
-  display: flex;
-  border-top: 1px solid rgb(176, 176, 176);
-`;
-
-const Guest = styled.div`
-  position: relative;
-  flex: 1 1 0%;
-`;
-
-const Arrow = styled.div`
-  position: relative;
-  flex: 1 1 0%;
-`;
-
-const GuestTitle = styled.div`
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  right: 12px;
-  font-size: 10px;
-  font-weight: 800;
-`;
-
-const GuestNum = styled.div`
-  padding-left: 12px;
-  padding-top: 26px;
-  padding-bottom: 10px;
-  font-size: 14px;
-  line-height: 18px;
-`;
-
-const DownUpArrow = styled.img`
-  padding-right: 12px;
-  right: 0px;
-  top: 30%;
-  position: absolute;
-`;
+import GuestsSelector from './guests-selector.jsx';
 
 class OptionsGuests extends React.Component {
   constructor(props) {
@@ -93,7 +54,7 @@ class OptionsGuests extends React.Component {
         <div className='OptionsGuests-Arrow' onClick={this.handleClick}>
           {arrow}
         </div>
-        {this.state.clicked ? <GuestBox maximum_guest={this.props.maximum_guest} close={this.close} adults={this.props.adults} children={this.props.children} totalGuest={totalGuest} infants={this.props.infants} add={this.props.add} subtract={this.props.subtract}/> : null}
+        {this.state.clicked ? <GuestsSelector maximum_guest={this.props.maximum_guest} close={this.close} adults={this.props.adults} children={this.props.children} totalGuest={totalGuest} infants={this.props.infants} add={this.props.add} subtract={this.props.subtract}/> : null}
       </div>
     );
   }

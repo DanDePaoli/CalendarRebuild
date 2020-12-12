@@ -8,41 +8,40 @@ const Fees = (props) => {
 
   return (
     <div>
-      <h1>Fees Please</h1>
-      {/* <Message>You won't be charged yet</Message>
-      <Fees>
-        <List>
-          <ListEntry>
-            <ListEntryLeft>
+      <div className='Fees-Message'>You won't be charged yet</div>
+      <div className='Fees-Fees'>
+        <ul className='Fees-List'>
+          <li className='Fees-ListEntry'>
+            <span className='Fees-ListEntryLeft'>
               ${props.nightly_fee} x {props.totalNight} nights:
-            </ListEntryLeft>
-            <ListEntryRight>
+            </span>
+            <span className='Fees-ListEntryRight'>
               ${props.totalNightlyFee}
-            </ListEntryRight>
-          </ListEntry>
-          <ListEntry>
-            <ListEntryLeft>
+            </span>
+          </li>
+          <li className='Fees-ListEntry'>
+            <span className='Fees-ListEntryLeft'>
               Cleaning fee:
-            </ListEntryLeft>
-            <ListEntryRight>
+            </span>
+            <span className='Fees-ListEntryRight'>
               ${props.cleaningFee}
-            </ListEntryRight>
-          </ListEntry>
-          <ListEntry style={lastEntry}>
-            <ListEntryLeft>
+            </span>
+          </li>
+          <li className='Fees-ListEntry' style={lastEntry}>
+            <span className='Fees-ListEntryLeft'>
               Service fee:
-            </ListEntryLeft>
-            <ListEntryRight>
+            </span>
+            <span className='Fees-ListEntryRight'>
               ${props.serviceFee}
-            </ListEntryRight>
-          </ListEntry>
-        </List>
-        <Total>
-          <TotalLeft>Total:</TotalLeft>
-          <TotalRight>${props.totalFee}</TotalRight>
-        </Total>
-      </Fees> */}
-    </div>
+            </span>
+          </li>
+        </ul>
+        <ul className='Fees-Total'>
+          <span className='Fees-TotalLeft'>Total:</span>
+          <span className='Fees-TotalRight'>${props.totalFee}</span>
+        </ul>
+      </div>
+  </div>
   );
 };
 

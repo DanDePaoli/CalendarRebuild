@@ -1,4 +1,4 @@
-.Outer {
+.App-Outer {
   width: 420px;
   margin-right: auto;
   margin-left: auto;
@@ -7,7 +7,7 @@
   position: sticky;
 }
 
-.Menu {
+.App-Menu {
   margin-top: 48px;
   border: 1px solid rgb(221, 221, 221);
   border-radius: 12px;
@@ -15,7 +15,7 @@
   box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
 }
 
-.Button {
+.App-Button {
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -42,7 +42,7 @@
   background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
 }
 
-.ButtonText {
+.App-ButtonText {
   display: block;
   position: relative;
   pointer-events: none;
@@ -501,9 +501,9 @@ color: rgb(113, 113, 113);
   background: transparent;
 }
 
-.Calendar-SingleCalendar {
+/* .Calendar-SingleCalendar {
 
-}
+} */
 
 .Calendar-MonthContainer {
   text-align: center;

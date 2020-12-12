@@ -55,7 +55,6 @@ class Guests extends React.Component {
     }
 
     return (
-      <div><h1>Guests</h1></div>
       <div className='Guests-Container' style={containerStyle}>
         <div className='Guests-Left'>
           <div className='Guests-GuestType'>{this.props.guest}</div>

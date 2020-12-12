@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Calendar from './Calendar.jsx';
+import Calendar from './calendar.jsx';
 
 class CalendarSelector extends React.Component {
   constructor(props) {
