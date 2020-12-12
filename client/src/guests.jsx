@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Guest extends React.Component {
+class Guests extends React.Component {
   constructor(props) {
     super(props);
 
@@ -56,20 +56,20 @@ class Guest extends React.Component {
 
     return (
       <div><h1>Guests</h1></div>
-      // <div className='Guests-Container' style={containerStyle}>
-      //   <div className='Guests-Left'>
-      //     <div className='Guests-GuestType'>{this.props.guest}</div>
-      //     <div className='Guests-GuestTypeInf'>{information}</div>
-      //   </div>
-      //   <div className='Guests-Right'>
-      //     {subtractButton}
-      //     {number}
-      //     {addButton}
-      //   </div>
-      // </div>
+      <div className='Guests-Container' style={containerStyle}>
+        <div className='Guests-Left'>
+          <div className='Guests-GuestType'>{this.props.guest}</div>
+          <div className='Guests-GuestTypeInf'>{information}</div>
+        </div>
+        <div className='Guests-Right'>
+          {subtractButton}
+          {number}
+          {addButton}
+        </div>
+      </div>
     );
   }
 }
 
-export default Guest;
+export default Guests;
 
