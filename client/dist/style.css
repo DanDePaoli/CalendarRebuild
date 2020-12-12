@@ -168,3 +168,134 @@ color: rgb(113, 113, 113);
     white-space: nowrap;
     font-weight: 800;
   }
+
+  .Dates-Container {
+    display: flex;
+  }
+
+  .Dates-Checkin {
+    position: relative;
+    flex: 1 1 0%;
+  }
+
+  .Dates-Checkout {
+    position: relative;
+    flex: 1 1 0%;
+    border-left: 1px solid rgb(176, 176, 176);
+  }
+
+  .Dates-CheckTile {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    font-size: 10px;
+    font-weight: 800;
+  }
+
+  .Dates-AddDate {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 26px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: rgb(113, 113, 113);
+  }
+
+  .Guests-Container {
+    margin-bottom: 24px;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    color: rgb(34, 34, 34);
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-weight: 400;
+  }
+
+  .Guests-Left {
+    flex: 1 1 0%;
+  }
+
+  .Guests-Right {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 104px;
+    height: 32px;
+    color: rgb(34, 34, 34);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  }
+
+  .Guests-GuestType {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+
+  .Guests-GuestTypeInf {
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 4px;
+  }
+
+  .Guests-GuestNum {
+    position: relative;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  .Guests-GuestButton {
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    color: rgb(113, 113, 113);
+    font-family: inherit;
+    justify-content: center;
+    padding-bottom: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(176, 176, 176);
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    text-align: center;
+    touch-action: manipulation;
+    align-items: center;
+    margin: 0px;
+    text-decoration: none;
+    outline: none;
+    :hover {
+      color: rgb(34, 34, 34);
+      border-color: rgb(34, 34, 34);
+    }
+}
+
+.Guests-DisableGuestButton {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  font-family: inherit;
+  justify-content: center;
+  padding-bottom: 4px;
+  border-width: 1px;
+  border-style: solid;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  font-size: 22px;
+  text-align: center;
+  touch-action: manipulation;
+  align-items: center;
+  margin: 0px;
+  text-decoration: none;
+  outline: none;
+  cursor: not-allowed;
+  color: rgb(235, 235, 235);
+  border-color: rgb(235, 235, 235);
+
+}
