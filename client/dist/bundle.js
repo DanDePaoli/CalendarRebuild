@@ -231,8 +231,9 @@ var App = /*#__PURE__*/function (_React$Component) {
     key: "componentDidMount",
     value: function componentDidMount() {
       // get a room id by path
-      var roomID = window.location.pathname.split('/')[2];
-      this.getRoomData(roomID); // this.getRoomData(1);
+      // let roomID = window.location.pathname.split('/')[2];
+      // this.getRoomData(roomID);
+      this.getRoomData(1);
     }
   }, {
     key: "getCheckInDate",

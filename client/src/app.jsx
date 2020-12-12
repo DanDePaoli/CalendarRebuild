@@ -82,9 +82,9 @@ postReservationData() {
 
 componentDidMount(){
   // get a room id by path
-  let roomID = window.location.pathname.split('/')[2];
-  this.getRoomData(roomID);
-  // this.getRoomData(1);
+  // let roomID = window.location.pathname.split('/')[2];
+  // this.getRoomData(roomID);
+  this.getRoomData(1);
 }
 
 getCheckInDate(dateMomentObj) {

@@ -13,6 +13,7 @@
     "seeddb": "node db/seed.js"
   },
   "dependencies": {
+    "express-static-gzip": "^2.1.0",
     "jquery": "^3.5.1",
     "moment": "^2.29.1",
     "node": "^15.2.0",

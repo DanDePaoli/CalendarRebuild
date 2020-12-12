@@ -14,3 +14,15 @@ module.exports = {
     })
   }
 }
+
+  createRandomRental: function(rental, callback){
+    db.query(`insert into rentals (name, quantity) values ("${grocery.name}", ${grocery.quantity})`, (err, results, fields) => {
+      if (err) {
+        callback(err);
+      } else {
+        callback(null, results);
+      }
+    })
+    // console.log('this is where I would add a grocery');
+  }
+}
