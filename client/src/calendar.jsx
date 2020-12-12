@@ -64,12 +64,12 @@ class Calendar extends React.Component {
       // OR the dateMomentObj is before or same as the checkOutDateMomentObj
       // OR the dateMomentObj is after or same as the closestBookedDateAfterCheckInDate
       if (this.checkBookedDate(dateMomentObj) || dateMomentObj.isSameOrBefore(moment()) || dateMomentObj.isBefore(this.state.checkInDateMomentObj) || dateMomentObj.isSameOrBefore(this.state.checkOutDateMomentObj) || dateMomentObj.isSameOrAfter(this.state.closestBookedDateAfterCheckInDate)) {
-        dayListInTag.push(<div className ='Calendar-EachDayContainer' key={day}><div className ='Calendar-DisableHoverEachDay'>{day}</div></div>);
+        dayListInTag.push(<td className ='Calendar-EachDayContainer' key={day}><div className ='Calendar-DisableHoverEachDay'>{day}</div></td>);
       // if the dateMomentObj is same as the checkInDateMomentObj
       } else if(dateMomentObj.isSame(this.state.checkInDateMomentObj)) {
-        dayListInTag.push(<div className ='Calendar-EachDayContainer' key={day}><div className ='Calendar-EachDay' style={{color:'rgb(255, 255, 255)', background:'rgb(34, 34, 34)'}}>{day}</div></div>);
+        dayListInTag.push(<td className ='Calendar-EachDayContainer' key={day}><div className ='Calendar-EachDay' style={{color:'rgb(255, 255, 255)', background:'rgb(34, 34, 34)'}}>{day}</div></td>);
       } else {
-        dayListInTag.push(<div className ='Calendar-EachDayContainer' key={day} onClick={(e) => this.onDayClick(e, dateMomentObj)}><div className ='Calendar-EachDay'>{day}</div></div>);
+        dayListInTag.push(<td className ='Calendar-EachDayContainer' key={day} onClick={(e) => this.onDayClick(e, dateMomentObj)}><div className ='Calendar-EachDay'>{day}</div></td>);
       }
     }
     // set a totalSlots contains emptyDayListInTag and dayListInTag
@@ -215,20 +215,24 @@ class Calendar extends React.Component {
       <div className='Calendar-Container'>
         <div className='Calendar-Top'>
           <div className='Calendar-WeekDaysContainer' style={{left: '0px'}}>
-            <ul className='Calendar-WeekDays'>
-              {weekDayListInTag}
-            </ul>
+          <table className='Calendar-WeekDays'>
+              <tr className='Calendar-WeekTable'>
+              <th>&nbsp;&nbsp;&nbsp;Su&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;Mu&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;Tu&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;We&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;Th&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;Fr&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;Sa&nbsp;&nbsp;&nbsp;</th>
+              </tr>
+            </table>
           </div>
           <div className='Calendar-WeekDaysContainer' style={{right: '0px'}}>
-            <ul className='Calendar-WeekDays'>
-              {weekDayListInTag}
-            </ul>
+            <table className='Calendar-WeekDays'>
+              <tr className='Calendar-WeekTable'>
+              <th>&nbsp;&nbsp;&nbsp;Su&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;Mu&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;Tu&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;We&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;Th&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;Fr&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;Sa&nbsp;&nbsp;&nbsp;</th>
+              </tr>
+            </table>
           </div>
           <div className='Calendar-MonthAndDayContainer'>
             <div className='Calendar-MonthAndDay'>
               <div className='Calendar-SingleCalendar'>
                 <div className='Calendar-MonthContainer'>
-                    <h1 className='Month'>{currentMonthMomentObj.format('MMMM YYYY')}</h1>
+                    <h1 className='Calendar-Month'>{currentMonthMomentObj.format('MMMM YYYY')}</h1>
                 </div>
                 <table className='Calendar-DaysTable'>
                   <tbody>
@@ -238,7 +242,7 @@ class Calendar extends React.Component {
               </div>
               <div className='Calendar-SingleCalendar'>
                 <div className='Calendar-MonthContainer'>
-                    <h1 className='Month'>{nextMonthMomentObj.format('MMMM YYYY')}</h1>
+                    <h1 className='Calendar-Month'>{nextMonthMomentObj.format('MMMM YYYY')}</h1>
                 </div>
                 <table className='Calendar-DaysTable'>
                   <tbody>

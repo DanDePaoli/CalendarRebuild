@@ -660,14 +660,14 @@ var Calendar = /*#__PURE__*/function (_React$Component) {
         // OR the dateMomentObj is after or same as the closestBookedDateAfterCheckInDate
 
         if (_this2.checkBookedDate(dateMomentObj) || dateMomentObj.isSameOrBefore(moment__WEBPACK_IMPORTED_MODULE_1___default()()) || dateMomentObj.isBefore(_this2.state.checkInDateMomentObj) || dateMomentObj.isSameOrBefore(_this2.state.checkOutDateMomentObj) || dateMomentObj.isSameOrAfter(_this2.state.closestBookedDateAfterCheckInDate)) {
-          dayListInTag.push( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          dayListInTag.push( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
             className: "Calendar-EachDayContainer",
             key: day
           }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "Calendar-DisableHoverEachDay"
           }, day))); // if the dateMomentObj is same as the checkInDateMomentObj
         } else if (dateMomentObj.isSame(_this2.state.checkInDateMomentObj)) {
-          dayListInTag.push( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          dayListInTag.push( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
             className: "Calendar-EachDayContainer",
             key: day
           }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -678,7 +678,7 @@ var Calendar = /*#__PURE__*/function (_React$Component) {
             }
           }, day)));
         } else {
-          dayListInTag.push( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          dayListInTag.push( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
             className: "Calendar-EachDayContainer",
             key: day,
             onClick: function onClick(e) {
@@ -901,16 +901,20 @@ var Calendar = /*#__PURE__*/function (_React$Component) {
         style: {
           left: '0px'
         }
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", {
         className: "Calendar-WeekDays"
-      }, weekDayListInTag)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
+        className: "Calendar-WeekTable"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "\xA0\xA0\xA0Su\xA0\xA0\xA0\xA0"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "\xA0\xA0\xA0\xA0Mu\xA0\xA0\xA0\xA0"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "\xA0\xA0\xA0\xA0Tu\xA0\xA0\xA0\xA0"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "\xA0\xA0\xA0\xA0We\xA0\xA0\xA0\xA0"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "\xA0\xA0\xA0\xA0Th\xA0\xA0\xA0\xA0"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "\xA0\xA0\xA0\xA0Fr\xA0\xA0\xA0\xA0"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "\xA0\xA0\xA0Sa\xA0\xA0\xA0")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "Calendar-WeekDaysContainer",
         style: {
           right: '0px'
         }
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", {
         className: "Calendar-WeekDays"
-      }, weekDayListInTag)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
+        className: "Calendar-WeekTable"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "\xA0\xA0\xA0Su\xA0\xA0\xA0\xA0"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "\xA0\xA0\xA0\xA0Mu\xA0\xA0\xA0\xA0"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "\xA0\xA0\xA0\xA0Tu\xA0\xA0\xA0\xA0"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "\xA0\xA0\xA0\xA0We\xA0\xA0\xA0\xA0"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "\xA0\xA0\xA0\xA0Th\xA0\xA0\xA0\xA0"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "\xA0\xA0\xA0\xA0Fr\xA0\xA0\xA0\xA0"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "\xA0\xA0\xA0Sa\xA0\xA0\xA0")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "Calendar-MonthAndDayContainer"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "Calendar-MonthAndDay"
@@ -919,7 +923,7 @@ var Calendar = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "Calendar-MonthContainer"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-        className: "Month"
+        className: "Calendar-Month"
       }, currentMonthMomentObj.format('MMMM YYYY'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", {
         className: "Calendar-DaysTable"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, this.getAllDaysOfMonth(currentMonthMomentObj)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -927,7 +931,7 @@ var Calendar = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "Calendar-MonthContainer"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-        className: "Month"
+        className: "Calendar-Month"
       }, nextMonthMomentObj.format('MMMM YYYY'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", {
         className: "Calendar-DaysTable"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, this.getAllDaysOfMonth(nextMonthMomentObj)))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
