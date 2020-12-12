@@ -2,7 +2,6 @@ import React from 'react';
 import axios from 'axios';
 // import $ from 'jquery';
 import moment from 'moment';
-// import styled from 'styled-components';
 import Fees from './fees.jsx';
 import Options from './options.jsx';
 import PlaceInfo from './placeinfo.jsx';
