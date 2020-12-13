@@ -233,7 +233,7 @@ var App = /*#__PURE__*/function (_React$Component) {
       // get a room id by path
       // let roomID = window.location.pathname.split('/')[2];
       // this.getRoomData(roomID);
-      this.getRoomData(1);
+      this.getRoomData(3);
     }
   }, {
     key: "getCheckInDate",
@@ -395,7 +395,7 @@ var App = /*#__PURE__*/function (_React$Component) {
           onMouseMove: this.handleMouseMove
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
           className: "App-ButtonWord"
-        }, "Reserve"));
+        }, "Send request"));
       }
 
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -995,22 +995,22 @@ var Fees = function Fees(props) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: "Fees-ListEntry"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "Fees-ListEntryLeft"
+    className: "Fees-EntryLeft"
   }, "$", props.nightly_fee, " x ", props.totalNight, " nights:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "Fees-ListEntryRight"
+    className: "Fees-EntryRight"
   }, "$", props.totalNightlyFee)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: "Fees-ListEntry"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "Fees-ListEntryLeft"
+    className: "Fees-EntryLeft"
   }, "Cleaning fee:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "Fees-ListEntryRight"
+    className: "Fees-EntryRight"
   }, "$", props.cleaningFee)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: "Fees-ListEntry",
     style: lastEntry
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "Fees-ListEntryLeft"
+    className: "Fees-EntryLeft"
   }, "Service fee:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "Fees-ListEntryRight"
+    className: "Fees-EntryRight"
   }, "$", props.serviceFee))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "Fees-Total"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -1630,13 +1630,13 @@ __webpack_require__.r(__webpack_exports__);
 var PlaceInfo = function PlaceInfo(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     id: "PlaceInfo-Container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "PlaceInfo-Left"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "PlaceInfo-Fee"
   }, "$", props.nightly_fee), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "PlaceInfo-Nightly"
-  }, "/ night")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "/ night")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "PlaceInfo-Right"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "PlaceInfo-Star"

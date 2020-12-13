@@ -12,26 +12,26 @@ const Fees = (props) => {
       <div className='Fees-Fees'>
         <ul className='Fees-List'>
           <li className='Fees-ListEntry'>
-            <span className='Fees-ListEntryLeft'>
+            <span className='Fees-EntryLeft'>
               ${props.nightly_fee} x {props.totalNight} nights:
             </span>
-            <span className='Fees-ListEntryRight'>
+            <span className='Fees-EntryRight'>
               ${props.totalNightlyFee}
             </span>
           </li>
           <li className='Fees-ListEntry'>
-            <span className='Fees-ListEntryLeft'>
+            <span className='Fees-EntryLeft'>
               Cleaning fee:
             </span>
-            <span className='Fees-ListEntryRight'>
+            <span className='Fees-EntryRight'>
               ${props.cleaningFee}
             </span>
           </li>
           <li className='Fees-ListEntry' style={lastEntry}>
-            <span className='Fees-ListEntryLeft'>
+            <span className='Fees-EntryLeft'>
               Service fee:
             </span>
-            <span className='Fees-ListEntryRight'>
+            <span className='Fees-EntryRight'>
               ${props.serviceFee}
             </span>
           </li>

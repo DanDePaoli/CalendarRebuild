@@ -84,7 +84,7 @@ componentDidMount(){
   // get a room id by path
   // let roomID = window.location.pathname.split('/')[2];
   // this.getRoomData(roomID);
-  this.getRoomData(1);
+  this.getRoomData(3);
 }
 
 getCheckInDate(dateMomentObj) {
@@ -214,7 +214,7 @@ render () {
     // update feeList
     feeList = <Fees nightly_fee={this.state.nightly_fee} totalNight={totalNight} totalNightlyFee={totalNightlyFee} cleaningFee={cleaningFee} serviceFee={serviceFee} totalFee={totalFee}/>
     // update submit button
-    submitButton = <button className='App-Button' onClick={this.postReservationData} style={buttonStyle} onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover} onMouseMove={this.handleMouseMove}><span className='App-ButtonWord'>Reserve</span></button>;
+    submitButton = <button className='App-Button' onClick={this.postReservationData} style={buttonStyle} onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover} onMouseMove={this.handleMouseMove}><span className='App-ButtonWord'>Send request</span></button>;
   }
 
   return(

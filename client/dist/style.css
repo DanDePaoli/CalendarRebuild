@@ -58,12 +58,22 @@
 
 .PlaceInfo-Left {
 margin-bottom: 24px;
+
 }
+
+.PlaceInfo-Right {
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 48%
+  }
 
 .PlaceInfo-Fee {
 font-weight: 600;
-font-size: 22px;
-line-height: 26px;
+/* font-size: 22px;
+line-height: 26px; */
+font-size: 22px !important;
+line-height: 26px !important;
+font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
 }
 
 
@@ -73,12 +83,10 @@ font-size: 16px;
 line-height: 20px;
 white-space: nowrap;
 padding-left: 4px;
+color: #222222;
 }
 
-.PlaceInfo-Right {
-font-size: 14px;
-line-height: 18px;
-}
+
 
 .PlaceInfo-Star {
  font-family: Airmoji_Standalone;
@@ -96,6 +104,7 @@ color: rgb(113, 113, 113);
 }
 
 .Options-Container {
+  margin-top: 1.5em;
   border-radius: 8px;
   border: 1px solid rgb(176, 176, 176);
   margin-bottom: 16px;
