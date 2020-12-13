@@ -84,7 +84,7 @@ componentDidMount(){
   // get a room id by path
   // let roomID = window.location.pathname.split('/')[2];
   // this.getRoomData(roomID);
-  this.getRoomData(3);
+  this.getRoomData(5);
 }
 
 getCheckInDate(dateMomentObj) {

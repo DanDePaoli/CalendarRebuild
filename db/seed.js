@@ -14,15 +14,15 @@ const generateRooms = function(callback) {
     let maximum_guest = 0;
     // if nightly_fee is less than 100
     if (nightly_fee <= 100) {
-      // set maximum guest to 1 and 3
-      maximum_guest = Math.floor(Math.random() * 3) + 1;
+      // set maximum guest to 3 and 5
+      maximum_guest = Math.floor(Math.random() * 3) + 3;
     // if nightly_fee is larger than 100 and less than 200
     } else if (nightly_fee > 100 && nightly_fee <= 200) {
-      // set maximum guest to 2 and 6
-      maximum_guest = Math.floor(Math.random() * 5) + 2;
+      // set maximum guest to 4 and 8
+      maximum_guest = Math.floor(Math.random() * 5) + 4;
     } else {
-      // set maximum guest to 2 and 8
-      maximum_guest = Math.floor(Math.random() * 7) + 2;
+      // set maximum guest to 4 and 10
+      maximum_guest = Math.floor(Math.random() * 7) + 4;
     }
     // declare query string
     let queryString = 'INSERT INTO rooms (nightly_fee, rating, reviews, minimum_stay, maximum_guest) VALUES (?, ?, ?, ?, ?)';

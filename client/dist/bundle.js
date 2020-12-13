@@ -233,7 +233,7 @@ var App = /*#__PURE__*/function (_React$Component) {
       // get a room id by path
       // let roomID = window.location.pathname.split('/')[2];
       // this.getRoomData(roomID);
-      this.getRoomData(3);
+      this.getRoomData(5);
     }
   }, {
     key: "getCheckInDate",
