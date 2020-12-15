@@ -1313,7 +1313,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_app_jsx__WEBPACK_IMPORTED_MODULE_0__["default"], null), document.getElementById("App"));
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_app_jsx__WEBPACK_IMPORTED_MODULE_0__["default"], null), document.getElementById("DDPCalendar"));
 
 /***/ }),
 

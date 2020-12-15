@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const port = 3011;
+const port = 3001;
 const db = require('../db/index.js');
 
 app.use(express.json());

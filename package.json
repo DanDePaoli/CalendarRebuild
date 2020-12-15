@@ -2,7 +2,7 @@
   "name": "calendar-rebuild",
   "version": "1.0.0",
   "description": "",
-  "author": "",
+  "author": "Daniel DePaoli",
   "license": "",
   "engines": {
     "node": ">=6.13.0"
