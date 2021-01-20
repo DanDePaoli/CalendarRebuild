@@ -43,7 +43,7 @@ if(err){
 // Dependency
 // const express = require('express');
 const bodyParser = require('body-parser');
-// const moment = require('moment');
+const moment = require('moment');
 // const path = require('path');
 // const expressStaticGzip = require("express-static-gzip");
 // const db = require('../db/index.js');
